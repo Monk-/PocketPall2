@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".Fragments.Fragment3">
+
+
+            <LinearLayout
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/incExpIncExp"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CarLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line"
+                android:clipToPadding="true"
+                android:padding="20dp"
+                android:paddingTop="10dp">
+
+                <com.example.aleksander.pocketpall2.StatisticList.ExpandableHeightListView
+                    android:id="@+id/Car"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/myrect" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ClothingLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CarLin"
+                android:clipToPadding="true"
+                android:padding="20dp">
+
+                <com.example.aleksander.pocketpall2.StatisticList.ExpandableHeightListView
+                    android:id="@+id/Clothing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/myrect" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ElectronicsLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ClothingLin"
+                android:clipToPadding="true"
+                android:padding="20dp">
+
+                <com.example.aleksander.pocketpall2.StatisticList.ExpandableHeightListView
+                    android:id="@+id/Electronics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/myrect" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ExpensesLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ElectronicsLin"
+                android:clipToPadding="true"
+                android:padding="20dp">
+
+                <com.example.aleksander.pocketpall2.StatisticList.ExpandableHeightListView
+                    android:id="@+id/Expenses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/myrect" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/HomeLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ExpensesLin"
+                android:clipToPadding="true"
+                android:padding="20dp">
+
+                <com.example.aleksander.pocketpall2.StatisticList.ExpandableHeightListView
+                    android:id="@+id/Home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/myrect" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IncomeLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/HomeLin"
+                android:clipToPadding="true"
+                android:padding="20dp">
+
+                <com.example.aleksander.pocketpall2.StatisticList.ExpandableHeightListView
+                    android:id="@+id/Income"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/myrect" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/WorkLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/IncomeLin"
+                android:clipToPadding="true"
+                android:padding="20dp">
+
+                <com.example.aleksander.pocketpall2.StatisticList.ExpandableHeightListView
+                    android:id="@+id/Work"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/myrect" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/EducationLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/WorkLin"
+                android:clipToPadding="true"
+                android:padding="20dp">
+
+                <com.example.aleksander.pocketpall2.StatisticList.ExpandableHeightListView
+                    android:id="@+id/Education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/myrect" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SportsLin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EducationLin"
+                android:clipToPadding="true"
+                android:padding="20dp">
+
+                <com.example.aleksander.pocketpall2.StatisticList.ExpandableHeightListView
+                    android:id="@+id/Sports"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/myrect" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/SportsLin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/greenLine"
+        android:background="@color/green"
+        android:layout_above="@+id/scrollView"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/greenLineText"
+            android:textColor="#000000"
+            android:text="LOl"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single"
+        android:id="@+id/menuGroup_1" >
+    <item android:id="@+id/dollar"
+        android:title="USD" />
+    <item android:id="@+id/zloty"
+        android:title="PLN"
+        android:checked="true" />
+    </group>
+</menu>

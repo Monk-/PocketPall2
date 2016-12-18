@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5F7D88</color>
+    <color name="colorPrimaryDark">#435A62</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#444440</color>
+    <color name="green">#61B329</color>
+    <color name="milkWhite">#FEFCFF</color>
+    <color name="selectedGray">#ffdbdbdb</color>
+    <color name="monthe">#91c2bf</color>
+    <color name="textGray">#9c9c9c</color>
+    <color name="bluee">#64B5F6</color>
+    <color name="greenChart">#009688</color>
+    <color name="redChart">#F06292</color>
+    <color name="bro">#8D6E63</color>
+</resources>

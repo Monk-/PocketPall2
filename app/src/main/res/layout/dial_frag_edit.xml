@@ -1,0 +1,91 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:fillViewport="true" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif"
+            android:scaleType="fitStart"
+            android:text="@string/add_income"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/md_textsize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/textGray"
+            android:text="@string/Title"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/Intitle"
+            android:layout_width="match_parent"
+            android:textColor="#2f4f4f"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:backgroundTint="@color/bluee"
+            android:paddingLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/textGray"
+            android:text="@string/Ammount"/>
+
+        <EditText
+            android:id="@+id/Inamount"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:backgroundTint="@color/bluee"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/textGray"
+            android:text="@string/Category"/>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:paddingStart="5dp"
+            android:fontFamily="sans-serif"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:id="@+id/IncategorySpinner"
+            android:backgroundTint="@color/bluee"
+            android:paddingLeft="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pickDate"
+            android:onClick="showDatePickerDialog"
+            android:paddingStart="5dp"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="5dp"/>
+    </LinearLayout>
+</ScrollView>

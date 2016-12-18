@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Fragment2">
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:layout_width="0dp"
+            android:id="@+id/periodSpinner"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:visibility="gone"
+            android:fontFamily="sans-serif"
+            style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+        <Spinner
+            android:layout_width="0dp"
+            android:id="@+id/chartSpinner"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:fontFamily="sans-serif"
+            style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+        <Spinner
+            android:layout_width="0dp"
+            android:id="@+id/expIncSpinner"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:visibility="gone"
+            android:fontFamily="sans-serif"
+            style="@style/Widget.AppCompat.Spinner.Underlined"/>
+    </LinearLayout>
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_below="@+id/line"
+        android:layout_width="match_parent"
+        android:id="@+id/piechart"
+        android:visibility="visible"
+        android:layout_height="match_parent"/>
+
+
+    <com.github.mikephil.charting.charts.RadarChart
+        android:layout_below="@+id/line"
+        android:layout_width="match_parent"
+        android:id="@+id/radarchart"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+
+
+    <com.github.mikephil.charting.charts.HorizontalBarChart
+        android:layout_below="@+id/line"
+        android:layout_width="match_parent"
+        android:id="@+id/barchart"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
